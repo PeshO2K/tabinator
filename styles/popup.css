@@ -1,0 +1,374 @@
+body {
+	background-color: darkslategray;
+	font-family: Arial, sans-serif;
+	padding: 10px;
+	width: 200px;
+	height:50%;
+	color: lavenderblush;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+	margin-top: 10px;
+	width: 50px;
+	text-align: center;
+}
+
+button {
+	margin-top: 10px;
+	padding: 5px 10px;
+}
+
+.tabcounter {
+	color: red;
+}
+
+.successbanner {
+	color: chartreuse;
+	font-weight: bold;
+	background-color: transparent;
+	/* color: black; */
+	/* padding:8px; */
+}
+
+.errormsg {
+	color: rgb(228, 25, 25);
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.favicon {
+	height: 20px;
+}
+
+.generic-btn{
+		/* width:30px; */
+	height:30px;
+	border-radius: 50px;
+	border-width:0;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	/* color:white; */
+	font-size: 11px;
+}
+.generic-btn:hover{
+
+	background-color: rgb(56, 110, 110);
+	color: white;
+}
+
+.limit-setter-container{
+	border-style: dashed;
+	border-color: aqua;
+	border-width: thin;
+	padding: 8px;
+	margin-bottom: 10px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.tab-manager{
+	border-style: dashed;
+	border-color: aqua;
+	border-width: thin;
+	padding: 8px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+
+}
+.limit-setter {
+	display: flex;
+	/* align-content: center; */
+	align-items: center;
+	justify-content: center;
+	margin-top: 0;
+	/* gap: 2px; */
+	/* border-color: yellow; */
+	/* border-style: dotted; */
+	/* border-width: thin; */
+	/* border-radius: 50px; */
+	/* padding: 8px; */
+}
+.limit-setter-input {
+	width:50px;
+	height:20px;
+	/* color:white; */
+	border-radius: 10px;
+	border-width:0;
+	margin-right:8px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+}
+.limit-setter-btn {
+	width:80px;
+	/* width:30px; */
+	/* height:30px;
+	border-radius: 50px;
+	border-width:0;
+	background-color: black;
+	color: white;
+	cursor: pointer; */
+	/* color:white; */
+}
+.limit-setter-btn:hover {
+	/* width:30px; */
+	/* height:30px;
+	border-radius: 50px;
+	border-width:0px; */
+	/* background-color: rgb(56, 110, 110); */
+	/* border-color: black; */
+	/* color: white;
+	cursor: pointer; */
+	/* color:white; */
+}
+
+
+.tab-counter{
+	/* margin-bottom: 30px; */
+	display: block;
+	/* margin-right: auto;
+	margin-left: auto; */
+	border-style: dashed;
+	border-color:rgb(60, 190, 108);
+	padding:8px
+	
+	/* color:yellowgreen; */
+}
+.tab-counter-breakdown{
+	font-size: 10px;
+}
+.tab-counter-critical{
+	border-color:rgb(233, 5, 62);
+}
+.tab-counter-warning{
+	border-color:rgb(244, 197, 9);
+}
+.tab-counter-open-default{color:rgb(14, 227, 92);}
+.tab-counter-open-critical{color:red;}
+.tab-counter-open-warning{color:goldenrod;}
+.tab-counter-critical-msg{color:red;margin-left:auto;margin-right: auto;display: block;}
+
+.options-container{
+	display: flex;
+	justify-content: flex-end;
+	/* border-style: dotted;
+	border-color: yellow; */
+	/* padding:8px; */
+	margin-bottom: 0;
+}
+.option-btn{
+	width:16px;
+	height:16px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 10px;
+
+	/* background-color: blue; */
+
+}
+.option-btn:hover{
+	background-color: wheat;
+}
+.btn-pin{
+	color:rgb(228, 44, 81);
+}
+.btn-unpin{
+	color:gray;
+}
+.btn-unpin:hover{
+	background-color: rgb(19, 38, 39);
+}
+.btn-close{
+	color:rgb(207, 19, 19);
+}
+.btn-tab-group{
+	color:plum;
+}
+.btn-tab-ungroup{
+	color:orange;
+}
+.btn-tab-ungroup:hover{
+	background-color: rgb(19, 38, 39);
+}
+/* ************** tab group form *********** */
+.tab-group-specs{
+	margin-top: 10px;
+	display: flex;
+	border-color: rgb(12, 192, 12);
+	border-style: dashed;
+	justify-content: center;
+	border-radius: 6px;
+	padding:8px
+	/* align-items: center; */
+}
+.tab-group-specs-title-container{
+	display: flex;
+	width:100%;
+	align-items:baseline;
+	margin-bottom: 10px;
+	gap:2px
+	/* justify-content: flex-start; */
+
+}
+
+.tab-group-specs-title-container input[type='text']{
+	/* width:100%; */
+	flex-grow: 1;
+	height: 10px;
+	font-size: 10px;
+	/* padding:10px */
+}
+
+
+.tab-group-specs-color-container{
+	display: flex;
+	width: 100%;
+	align-items:baseline;
+	gap:2px
+
+}
+
+.tab-group-specs-color-container select{
+	/* width:100%; */
+	flex-grow: 1;
+	font-size: 10px;
+}
+
+
+.tab-group-specs-btn{
+	/* align-self: center; */
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	font-size: 10px;
+}
+
+/* *************************************** */
+/* *************************************** */
+/* *************************************** */
+
+
+.tab-list {
+	margin-bottom: 20px;
+	list-style: none;
+	width: 100%;
+	margin-left: 0;
+	list-style-position: inside;
+}
+.pinned-tab-list{
+	border-width: thin;
+	border-color: yellow;
+	border-style: dashed;
+	
+}
+.unpinned-tab-list{
+	border-width: thin;
+	border-color: silver;
+	border-style: dashed;
+	
+}
+
+.tab-list-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	/* margin: 5px 0; */
+	/* border: thin;
+	border-color: yellow;
+	border-style: dotted; */
+	/* width: 100%; */
+}
+
+.tab-icon {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+
+.tab-icon-pin {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	/* color:rgb(191, 10, 10); */
+	cursor: pointer;
+	/* display: block; */
+}
+.tab-icon-unpin {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	/* color:rgb(191, 10, 10); */
+	cursor: pointer;
+	/* display: block; */
+}
+
+/* .tab-checkbox{
+			margin-left: 0;
+			background-color: aqua;
+			margin-right: 0;
+		} */
+
+.tab-list-item label {
+	flex-grow: 1;
+	/* Label takes up the remaining width */
+	overflow: hidden;
+	/* Hide overflow */
+	text-overflow: ellipsis;
+	/* Add ellipsis (...) for overflow text */
+	white-space: nowrap;
+	/* Prevent text wrapping */
+}
+
+.tab-list-item input[type='checkbox'] {
+	/* display: block; */
+	background-color: aqua;
+	text-align: center;
+	width: 16px;
+	min-height: 16px;
+	min-width: 16px;
+	height: 16px;
+	cursor: pointer;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	/* align-self: center; */
+	/* Label takes up the remaining width */
+}
+
+.tab-groups-container {
+	display: flex;
+	flex-direction: row;
+	border-style: dashed;
+	border-color:coral;	
+	border-width: thin;
+	/* margin: 10px 0; */
+}
+
+.tab-group {
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+.tab-group-circle {
+	width: 15px;
+	/* Adjust size as needed */
+	height: 15px;
+	/* Adjust size as needed */
+	border-radius: 50%;
+	/* Makes the div a circle */
+	margin-right: 10px;
+	/* Space between circle and title */
+}
+
+
+.section-title{
+	font-weight: bold;
+	margin-bottom: 1px;
+}
+.not-found{
+	margin-left:8px;
+	/* background-color: yellowgreen; */
+	/* align-self: center; */
+}

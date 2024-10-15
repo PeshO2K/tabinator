@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tab Manager</title>
+	<link rel="stylesheet" href="styles/popup.css">
+	<!-- <link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=tab_group" /> -->
+	<!-- <link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=ungroup" /> -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+	<!-- <style>
+		.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 10
+}
+	</style> -->
+
+</head>
+
+<body>
+	<h2>Tabinator</h2>
+	<div class="limit-setter-container">
+		<p style="margin-bottom: 0;">Set the maximum number of tabs allowed:</p>
+		<div class="limit-setter">
+			<input type="number" id="maxTabsInput" min="1" class="limit-setter-input" />
+		
+			<button id="setMaxTabsBtn" class="generic-btn limit-setter-btn">Set</button>
+		</div>
+		<p id="limitSetBanner" class="successbanner"></p>
+		<p id="limitSetBanner2" class="successbanner"></p>
+		
+		<p id="openTabCount" class="tab-counter"></p>
+
+	</div>
+	
+	
+	
+	<div class="tab-manager">
+		<div class="options-container">
+		<!-- <button id="pinBtn">Pin</button> -->
+		
+		<img src="icons/pin.png" alt="" class="option-btn btn-pin" id="pinBtn" title="pin">
+		<img src="icons/unpin.png" alt="" class="option-btn btn-unpin" id="unpinBtn" title="unpin">
+		<img src="icons/tab_group_24.png" alt="" class="option-btn btn-tab-group" id="groupBtn" title="group tabs">
+		<img src="icons/ungroup.png" alt="" class="option-btn btn-tab-ungroup" id="ungroupBtn" title="ungroup tabs">
+		<img src="icons/tab_close.png" alt="" class="option-btn btn-close" id="closeBtn" title="close tabs">
+		
+
+
+		<!-- <span class="material-symbols-outlined option-btn btn-pin" id="pinBtn">
+			keep
+		</span>
+		<span class="material-symbols-outlined option-btn btn-unpin" id="unpinBtn">
+			keep_off
+		</span>
+		
+		<span class="material-symbols-outlined option-btn btn-tab-group" id="groupBtn">
+			tab_group
+		</span>
+		<span class="material-symbols-outlined option-btn btn-tab-ungroup" id="ungroupBtn">
+			ungroup
+		</span>
+		<span class="material-symbols-outlined option-btn btn-close" id="closeBtn">
+			tab_close
+		</span> -->
+	</div>
+	
+
+	
+	
+	<!-- <button id="groupBtn">group</button> -->
+	<!-- <button id="createGroupToggleBtn">Create Tab Group</button> -->
+	
+	<div id="tabGroupInputs" style="display: none;" class="tab-group-specs">
+		<h3 style="margin-top: 2px;margin-bottom: 0; text-align: center;">Group Details</h3>
+		<div class="tab-group-specs-title-container">
+			<label for="groupTitleInput">Title: </label>
+			<input type="text" id="groupTitleInput" placeholder="Enter tab group title">
+		</div>
+	
+		<div class="tab-group-specs-color-container">
+			<label for="groupColorPicker"> Color: </label>
+			<select id="groupColorPicker">
+				<option value="red">Red</option>
+				<option value="orange">Orange</option>
+				<option value="yellow">Yellow</option>
+				<option value="green">Green</option>
+				<option value="cyan">Cyan</option>
+				<option value="blue">Blue</option>
+				<option value="purple">Purple</option>
+				<option value="pink">Pink</option>
+			</select>
+		</div>
+	
+		<button id="confirmCreateGroupBtn" class="generic-btn tab-group-specs-btn"> Create Tab Group</button>
+	</div>
+	<!-- <button id="ungroupBtn">ungroup</button> -->
+	<!-- <br>
+	<br> -->
+
+	<p class="tab-list-title section-title">Pinned Tabs</p>
+	 <div class="tab-list pinned-tab-list" id="pinnedTabList"></div>
+
+
+	<p class="tab-list-title section-title"> Other Tabs</p>
+	 <div class="tab-list unpinned-tab-list" id="unpinnedTabList"></div>
+	
+
+	<!-- New section for Tab Groups -->
+	<p class="tab-list-title  section-title ">Tab Groups</p>
+	<div class="tab-list tab-groups-container" id="groupTabList"></div>
+	
+
+</div>
+
+	
+	<p id="feedbackMessage"></p>
+	<p id="feedbackMessage2"></p>
+
+	<script src="scripts/popup.js"></script>
+	
+
+</body>
+
+</html>
